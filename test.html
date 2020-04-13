@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Component</title>
+    </head>
+    <style>
+        .profile{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .profile div{
+            margin: 20px;
+        }
+    </style>
+    <body>
+
+
+        <div class="profile">
+            <div>
+                <github-card data-user="benawad"></github-card>
+            </div>
+            <div>
+                <github-card data-user="rocktimsaikia"></github-card>
+            </div>
+            <div>
+                <github-card data-user="sindresorhus"></github-card>
+            </div>
+
+        </div>
+        <script src="./dist/widget.min.js"></script>
+    </body>
+</html>

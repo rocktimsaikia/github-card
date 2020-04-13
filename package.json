@@ -1,0 +1,30 @@
+{
+  "name": "@rocktimsaikia/github-card",
+  "version": "1.0.0",
+  "description": "A beautiful github card for your portfolio.",
+  "main": "./dist/widget.js",
+  "scripts": {
+    "build": "node config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocktimSaikia/github-card.git"
+  },
+  "keywords": [
+    "github",
+    "card",
+    "profile",
+    "embedded"
+  ],
+  "author": "Rocktim Saikia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RocktimSaikia/github-card/issues"
+  },
+  "homepage": "https://github.com/RocktimSaikia/github-card#readme",
+  "devDependencies": {
+    "@node-minify/core": "^5.3.0",
+    "@node-minify/terser": "^5.3.0",
+    "fs-extra": "^9.0.0"
+  }
+}
