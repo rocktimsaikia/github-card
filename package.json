@@ -1,6 +1,6 @@
 {
   "name": "@rocktimsaikia/github-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A beautiful github card for your portfolio.",
   "main": "dist/widget.min.js",
   "module": "dist/widget.min.js",
