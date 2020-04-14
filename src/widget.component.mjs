@@ -7,13 +7,7 @@ class myCard extends HTMLElement {
 
         const fetch_data = async (user) => {
             const data = await fetch(`https://api.github.com/users/${user}`, {
-                method: "GET",
-                headers: {
-                    Authorization: {
-                        token: 'fd8c6d9dacf9f71f2b9ff2d8131bf66de7f046d0',
-                        'Content-Type': 'application/json'
-                    },
-                }
+                method: "GET"
             });
             const result = await data.json();
             return result;
