@@ -6,7 +6,7 @@
 
 > Beautiful embeddable Github Profile Cards for your portfolio. 
 
-![GitHub](https://img.shields.io/github/license/rocktimsaikia/github-card?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/@rocktimsaikia/github-card?style=for-the-badge) ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@rocktimsaikia/github-card?style=for-the-badge) ![npm bundle size](https://img.shields.io/bundlephobia/min/@rocktimsaikia/github-card?style=for-the-badge)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@rocktimsaikia/github-card?style=for-the-badge) ![npm bundle size](https://img.shields.io/bundlephobia/min/@rocktimsaikia/github-card?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/rocktimsaikia/github-card?style=for-the-badge) 
 
 <img src="https://i.ibb.co/gRnx53c/single-compressor.png" alt="single-compressor" border="0">
 
@@ -27,6 +27,19 @@
 <script src="https://unpkg.com/@rocktimsaikia/github-card@1.0.0/dist/widget.min.js" type="module"></script>
 ```
 
+
+### 2. With installing
+* install the package.
+```js
+npm install @rocktimsaikia/github-card
+```
+* Then just import/require the package.
+```js
+import '@rocktimsaikia/github-card'
+
+
+<github-card data-user="rocktimsaikia"></github-card>
+```
 
 ---
 
