@@ -28,11 +28,6 @@
 ```
 
 
-
-## Support
-<a href="https://www.buymeacoffee.com/7BdaxfI" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" width="200px" style="border-radius: 5px"></a>
-
-
 ---
 
 ## License
