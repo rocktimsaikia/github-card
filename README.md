@@ -10,7 +10,7 @@
 
 <img src="https://i.ibb.co/gRnx53c/single-compressor.png" alt="single-compressor" border="0">
 
-
+## [Live Demo](https://codepen.io/RocktimSaikia/full/jObbBmR)
 
 ## Usage
 ### 1. Using scripts:
