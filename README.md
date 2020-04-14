@@ -24,7 +24,7 @@
 
 * Link this following script at the end of your `</body>` tag.
 ```html
-<script src="https://unpkg.com/@rocktimsaikia/github-card@1.0.0/dist/widget.min.js"></script>
+<script src="https://unpkg.com/@rocktimsaikia/github-card@1.0.0/dist/widget.min.js" type="module"></script>
 ```
 
 
