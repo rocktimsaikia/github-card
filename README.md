@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/Qm1T3pt/github-card-dark-mode.jpg" alt="final-product" border="0">
+<img src="https://i.ibb.co/mXB2Ytr/github-card-dark-mode.png" alt="final-product" border="0">
 
 
 
