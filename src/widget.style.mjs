@@ -4,6 +4,10 @@ h1, div, p {
     padding: 0px;
     font-family: 'Roboto','sans serif';
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 #github-logo{
     height: 20px;
     position: absolute;
@@ -32,6 +36,34 @@ h1, div, p {
     padding-top: 5px;
     transition: all 0.5s;
 }
+
+/* Dark Theme */
+.card.dark{
+    background: #1C1D21;
+}
+.dark .card-title{
+    color: #E4E4E4 !important;
+    font-weight: 500 !important;
+}
+.dark .card-desc{
+    color: #E4E4E4 !important;
+    font-weight: 500 !important;
+} 
+.dark .count{
+    color: #E4E4E4 !important;
+    font-weight: 600 !important;
+} 
+.dark .box-text{
+    color: #E4E4E4 !important;
+    font-weight: 500 !important;
+}
+.dark .footer-box{
+    background: #1D2025 !important;
+    box-shadow: 0px 0.2px 5px rgba(255, 255, 255, 0.15), 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+
 .card .fa-github {
     position: absolute;
     color: #646464;

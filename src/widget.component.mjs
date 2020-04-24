@@ -9,6 +9,16 @@ class myCard extends HTMLElement {
 
     };
 
+    get observedAttribute() {
+        return ["data-theme"];
+    }
+
+    attributeChangedCallback(attr, oldValue, newValue) {
+        if (attr == 'data-theme' && oldValue !== newValue && newValue !== '') {
+            this[attr] = newValue;
+        }
+    };
+
     connectedCallback() {
         const font_uri = 'https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&family=Roboto&display=swap'
         this.font_Loader(font_uri);
@@ -17,7 +27,25 @@ class myCard extends HTMLElement {
             const card_template = this.create_card(res);
             this._shadowRoot.querySelector('.card').innerHTML = card_template;
         });
+
+        if (this.getAttribute('data-theme')) {
+            const theme = this.getAttribute('data-theme');
+            this.setTheme(theme);
+        }
     };
+
+    setTheme(theme) {
+
+        switch (theme) {
+            case 'dark':
+                this._shadowRoot.querySelector('.card').classList.add('dark');
+                break;
+            default:
+                this._shadowRoot.querySelector('.card').classList.remove('dark');
+                break;
+        }
+
+    }
 
 
     /** fetch the data */
@@ -42,11 +70,11 @@ class myCard extends HTMLElement {
         return `
         <div class="cover"></div>
         <div class="card-wrapper">
-        <a href="${user.html_url}" target="_blank" rel="noopener"><img id="github-logo" src="https://i.ibb.co/frv5pB3/github-logo.png" alt="github-logo" border="0"></a>
+        <a href="https://github.com/RocktimSaikia/github-card" target="_blank" rel="noopener"><img id="github-logo" src="https://i.ibb.co/frv5pB3/github-logo.png" alt="github-logo" border="0"></a>
         <div class="card-header">
         <div class="card-img-wrapper"><img src="https://avatars.githubusercontent.com/${user.login}"/></div>
-        <h1 class="card-title">${user.name}</h1>
-        <div class="card-resname">@${user.login}</div>
+        <h1><a class="card-title" href="${user.html_url}" target="_blank" rel="noopener">${user.name}</a></h1>
+        <div class="card-resname"><a href="${user.html_url}" target="_blank" rel="noopener">@${user.login} 🎉</a></div>
         <p class="card-desc">${user.bio}</p>
         <div class="card-footer">
         <div class="footer-box">
@@ -69,13 +97,13 @@ class myCard extends HTMLElement {
 };
 
 const template = document.createElement('template');
+
+
 template.innerHTML = `
     <style>
         ${widget_style}
     </style>
-    <div class="card">
-        <img src="https://i.ibb.co/KDkTD3n/Ellipsis-1s-200px.gif" alt="Ellipsis-1s-200px" border="0">
-    </div>
+    <div class="card"></div>
 `
 
 customElements.define('github-card', myCard);
