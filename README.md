@@ -1,5 +1,6 @@
 <img src="https://i.ibb.co/mXB2Ytr/github-card-dark-mode.png" alt="final-product" border="0">
 
+<a href="https://www.buymeacoffee.com/7BdaxfI" target="_blank"><img style="border-radius:10px" src="https://cdn.buymeacoffee.com/buttons/default-violet.png" alt="Buy Me A Coffee" width="140px"></a>
 
 
 # Github Card
