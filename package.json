@@ -1,9 +1,12 @@
 {
   "name": "@rocktimsaikia/github-card",
   "version": "2.0.0",
-  "description": "A beautiful github card for your portfolio.",
+  "description": "A minimal github card widget for your portfolio.",
   "main": "dist/widget.min.js",
   "module": "dist/widget.min.js",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "webpack"
   },
@@ -17,7 +20,11 @@
     "profile",
     "embedded"
   ],
-  "author": "Rocktim Saikia",
+  "author": {
+    "name": "Rocktim Saikia",
+    "email": "rocktimthedev@gmail.com",
+    "url": "https://rocktimsaikia.now.sh/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RocktimSaikia/github-card/issues"
@@ -25,7 +32,7 @@
   "homepage": "https://github.com/RocktimSaikia/github-card#readme",
   "devDependencies": {
     "babel-minify-webpack-plugin": "^0.3.1",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0"
   }
 }
