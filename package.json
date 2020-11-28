@@ -43,6 +43,9 @@
     "ignores":[
       "dist/**/*"
     ],
+    "rules":{
+      "import/extensions": "off"
+    },
     "settings": {
       "import/resolver": {
         "node": {}

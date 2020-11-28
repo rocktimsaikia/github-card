@@ -1,4 +1,4 @@
-export const widget_style = `
+export const widgetStyle = `
 h1, div, p {
     margin: 0px;
     padding: 0px;
@@ -137,4 +137,5 @@ a{
         width: 100%;
     }
 }
-`
+`;
+
