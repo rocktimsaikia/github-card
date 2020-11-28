@@ -9,17 +9,24 @@
 	</p>
 </div>
 
-#### :rocket: [Live codepen demo](https://codepen.io/RocktimSaikia/full/jObbBmR)
+## :sparkles: Highlights
 
-## Usage
+- Simple and easy to use
+- Minimal and neat design
+- Dark theme available
+<br/><br/>
+#### :rocket:[Live codepen demo](https://codepen.io/RocktimSaikia/full/jObbBmR)
+<br/><br/>
+## :cloud: Usage
 
+#### Basic Usage
 ```html
 <script src="https://unpkg.com/@rocktimsaikia/github-card@2.0.0/dist/widget.min.js" type="module"></script>
 
 <github-card data-user="rocktimsaikia"></github-card>
 ```
 
-_Or you can also use it via installation_
+#### Installation
 
 ```js
 npm install @rocktimsaikia/github-card
@@ -27,18 +34,19 @@ npm install @rocktimsaikia/github-card
 
 Then import/require the package.
 
-```html
+```js
 import '@rocktimsaikia/github-card'
 
 <github-card data-user="rocktimsaikia"></github-card>
 ```
 
+#### Theme
 _You can also enable dark theme by setting the data-theme attribute to `dark`_
 
 ```html
 <github-card data-user="rocktimsaikia" data-theme="dark"></github-card>
 ```
-
+<br/><br/>
 ## License
 
 MIT © [Rocktim Saikia](https://rocktimsaikia.now.sh) 2020
