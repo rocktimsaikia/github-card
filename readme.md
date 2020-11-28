@@ -9,7 +9,7 @@
 	</p>
 </div>
 
-#### [Live codepen demo](https://codepen.io/RocktimSaikia/full/jObbBmR)
+#### :rocket: [Live codepen demo](https://codepen.io/RocktimSaikia/full/jObbBmR)
 
 ## Usage
 

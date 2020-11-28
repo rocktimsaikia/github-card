@@ -1,5 +1,5 @@
 const path = require('path');
-const MinifyPlugin = require("babel-minify-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     entry: './src/widget.component.mjs',
@@ -8,5 +8,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     mode: 'production',
-    plugins: [new MinifyPlugin()]
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin()]
+    }
 };
