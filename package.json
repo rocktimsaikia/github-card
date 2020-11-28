@@ -1,6 +1,6 @@
 {
   "name": "@rocktimsaikia/github-card",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A minimal github card widget for your portfolio.",
   "main": "dist/widget.min.js",
   "module": "dist/widget.min.js",
@@ -10,6 +10,7 @@
   "scripts": {
     "test": "xo",
     "prebuild": "del dist",
+    "prepublishOnly": "npm run test && npm run build",
     "build": "webpack"
   },
   "repository": {

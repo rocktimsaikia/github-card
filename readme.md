@@ -2,7 +2,7 @@
 	<h1 align="center">github-card</h1>
 	<p align="center">Beautiful embeddable github profile card for your portfolio.</p>
 	<p align="center">
-		<img alt="dependencies" src="https://img.shields.io/librariesio/release/npm/@rocktimsaikia/github-card"/>
+		<img alt="dependencies" src="https://img.shields.io/david/dev/rocktimsaikia/github-card">
 		<img alt="size" src="https://img.shields.io/bundlephobia/min/@rocktimsaikia/github-card"/>
 		<img alt="npm" src="https://img.shields.io/npm/v/@rocktimsaikia/github-card"/><br/><br/><br/>
 		<img src="https://i.ibb.co/gRnx53c/single-compressor.png" height="350px"/>
