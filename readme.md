@@ -21,7 +21,7 @@
 
 #### Basic Usage
 ```html
-<script src="https://unpkg.com/@rocktimsaikia/github-card@2.0.0/dist/widget.min.js" type="module"></script>
+<script src="https://unpkg.com/@rocktimsaikia/github-card@2.1.1/dist/widget.min.js" type="module"></script>
 
 <github-card data-user="rocktimsaikia"></github-card>
 ```
