@@ -8,9 +8,9 @@
 		"dist/**/*"
 	],
 	"scripts": {
-		"test": "xo",
+		"lint": "eslint .",
 		"prebuild": "del-cli dist",
-		"prepublishOnly": "npm run test && npm run build",
+		"prepublishOnly": "npm run lint && npm run build",
 		"build": "webpack"
 	},
 	"repository": {
@@ -35,22 +35,11 @@
 	"homepage": "https://github.com/RocktimSaikia/github-card#readme",
 	"devDependencies": {
 		"del-cli": "^3.0.1",
+		"eslint": "7.2.0",
+		"eslint-config-airbnb-base": "14.2.1",
+		"eslint-plugin-import": "2.22.1",
 		"terser-webpack-plugin": "^5.0.3",
 		"webpack": "^5.8.0",
-		"webpack-cli": "^4.2.0",
-		"xo": "^0.35.0"
-	},
-	"xo": {
-		"ignores": [
-			"dist/**/*"
-		],
-		"rules": {
-			"import/extensions": "off"
-		},
-		"settings": {
-			"import/resolver": {
-				"node": {}
-			}
-		}
+		"webpack-cli": "^4.2.0"
 	}
 }
