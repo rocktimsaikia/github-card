@@ -5,7 +5,7 @@
 		<img alt="dependencies" src="https://img.shields.io/david/dev/rocktimsaikia/github-card">
 		<img alt="size" src="https://img.shields.io/bundlephobia/min/@rocktimsaikia/github-card"/>
 		<img alt="npm" src="https://img.shields.io/npm/v/@rocktimsaikia/github-card"/><br/><br/><br/>
-		<img src="https://i.ibb.co/fQqFTZN/single-compressor-1.png" height="350px"/>
+		<img src="https://i.ibb.co/qjfB9T8/screely-1619112791247-1.png" height="350px"/>
 	</p>
 </div>
 
