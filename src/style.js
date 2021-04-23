@@ -120,7 +120,7 @@ a{
 .card .card-footer .footer-box .box-wrapper .count {
     font-family: 'consolas'
     color: #434343;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 .card .card-footer .footer-box .box-wrapper .box-text {
