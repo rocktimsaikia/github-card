@@ -8,7 +8,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"build": "rollup -c",
-		"prebuild": "del-cli dist && npm run lint && mkdir dist",
+		"prebuild": "del-cli dist && npm run lint",
 		"prepublishOnly": "npm run lint && npm run build",
 		"postversion": "git push && git push --tags"
 	},
