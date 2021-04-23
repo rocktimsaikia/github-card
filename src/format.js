@@ -1,5 +1,6 @@
 /* eslint-disable no-restricted-properties */
 function nFormatter(value) {
+  if (!(value >= 1000)) return value;
   let newValue = value;
   const suffixes = ['', 'K', 'M', 'B', 'T'];
   let suffixNum = 0;

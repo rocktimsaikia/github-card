@@ -46,15 +46,15 @@ a{
     font-weight: 500 !important;
 }
 .dark .card-desc{
-    color: #E4E4E4 !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
+    color: #c6c6c6 !important;
 } 
 .dark .count{
-    color: #E4E4E4 !important;
+    color: #c6c6c6 !important;
     font-weight: 600 !important;
 } 
 .dark .box-text{
-    color: #E4E4E4 !important;
+    color: #797979 !important;
     font-weight: 500 !important;
 }
 .dark .footer-box{
@@ -74,19 +74,19 @@ a{
 .card .card-title {
     color: #434343;
     margin-bottom: -8px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 .card .card-responsename {
     margin-bottom: 20px;
-    color: #646464;
+    color: #797979;
 }
 .card .card-desc {
+    font-weight: 500;
     width: 250px;
     margin: auto;
     display: block;
-    font-weight: 600;
-    color: #0000008a;
+    color: #3c3c3c;
 }
 .card .card-img-wrapper {
     position: relative;
@@ -105,9 +105,8 @@ a{
 }
 .card .card-footer .footer-box {
     position: relative;
-    background: #efefef;
     border-top: 2px solid #ff9b9b;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.26), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 3px 6px -1px rgb(0 0 0 / 26%), 0 2px 4px -1px rgb(0 0 0 / 6%);
     border-radius: 5px;
     width: 300px;
     margin: 0 auto;
@@ -121,7 +120,7 @@ a{
 .card .card-footer .footer-box .box-wrapper .count {
     font-family: 'consolas'
     color: #434343;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
 }
 .card .card-footer .footer-box .box-wrapper .box-text {

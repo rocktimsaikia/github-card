@@ -69,7 +69,7 @@ class myCard extends HTMLElement {
         <div class="card-header">
         <div class="card-img-wrapper"><img src="https://avatars.githubusercontent.com/${user.login}"/></div>
         <h1><a class="card-title" href="${user.html_url}" target="_blank" rel="noopener">${user.name}</a></h1>
-        <div class="card-responsename"><a href="${user.html_url}" target="_blank" rel="noopener">@${user.login} 🎉</a></div>
+        <div class="card-responsename"><a href="${user.html_url}" target="_blank" rel="noopener">@${user.login}</a></div>
         <p class="card-desc">${user.bio ?? ''}</p>
         <div class="card-footer">
         <div class="footer-box">
@@ -78,11 +78,11 @@ class myCard extends HTMLElement {
                 <div class="box-text">Followers</div>
             </div>   
             <div class="box-wrapper">
-                <div class="count">${user.following}</div>
+                <div class="count">${nFormatter(user.following)}</div>
                 <div class="box-text">Following</div>
             </div>  
             <div class="box-wrapper">
-                <div class="count">${user.public_repos}</div>
+                <div class="count">${nFormatter(user.public_repos)}</div>
                 <div class="box-text">Repositories</div>
             </div>
         </div>
