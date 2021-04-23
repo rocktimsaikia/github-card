@@ -38,13 +38,13 @@ import '@rocktimsaikia/github-card'
 <github-card data-user="rocktimsaikia"></github-card>
 ```
 
-Or use it as a script in an `html` file :
+Or use it as a script in a `html` file :
 ```html
 <script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@latest?module"></script>
 ```
 
 ## Theme
-You can also enable dark theme by setting the data-theme attribute to `dark`
+You can enable the optional dark theme by setting the `data-theme` attribute to `dark`
 
 ```html
 <github-card data-user="rocktimsaikia" data-theme="dark"></github-card>
