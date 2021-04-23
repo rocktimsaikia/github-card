@@ -1,5 +1,6 @@
 /* eslint no-undef: 0 */
 import widgetStyle from './style.js';
+import nFormatter from './format.js';
 
 const template = document.createElement('template');
 
@@ -73,7 +74,7 @@ class myCard extends HTMLElement {
         <div class="card-footer">
         <div class="footer-box">
             <div class="box-wrapper">
-                <div class="count">${user.followers}</div>
+                <div class="count">${nFormatter(user.followers)}</div>
                 <div class="box-text">Followers</div>
             </div>   
             <div class="box-wrapper">
