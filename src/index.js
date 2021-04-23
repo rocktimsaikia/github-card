@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-import widgetStyle from './widget.style.mjs';
+import widgetStyle from './style.js';
 
 const template = document.createElement('template');
 
