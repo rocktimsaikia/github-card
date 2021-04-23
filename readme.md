@@ -1,38 +1,40 @@
 <div>
-	<h1 align="center">github-card</h1>
-	<p align="center">Beautiful embeddable github profile card for your portfolio.</p>
+	<h1 align="center">github-card 🌈</h1>
+	<p align="center">Beautiful embeddable github profile card for your portfolio. <br/> 
+    Here is a live <a href="https://codepen.io/RocktimSaikia/full/jObbBmR">codepen Demo</a></p>
 	<p align="center">
-		<img alt="dependencies" src="https://img.shields.io/david/dev/rocktimsaikia/github-card">
-		<img alt="size" src="https://img.shields.io/bundlephobia/min/@rocktimsaikia/github-card"/>
-		<img alt="npm" src="https://img.shields.io/npm/v/@rocktimsaikia/github-card"/><br/><br/><br/>
-		<img src="https://i.ibb.co/fQqFTZN/single-compressor-1.png" height="350px"/>
+		<a href="https://github.com/rocktimsaikia/github-card/actions"><img alt="CI" src="https://github.com/rocktimsaikia/github-card/workflows/CI/badge.svg"/></a>
+		<a href="https://www.npmjs.com/package/@rocktimsaikia/github-card"><img src="https://badge.fury.io/js/%40rocktimsaikia%2Fgithub-card.svg" alt="npm version"></a>
 	</p>
+    <p align="center"><a href="https://codepen.io/RocktimSaikia/full/jObbBmR"><img src="https://i.ibb.co/LdZZMdr/github-card.png"/></a></p>
 </div>
 
-## :sparkles: Highlights
 
+## Highlights 
+
+- Tiny and Zero dependencies (`~4kb`)
 - Simple and easy to use
 - Minimal and neat design
 - Dark theme available
-<br/><br/>
-#### :rocket:[Live codepen demo](https://codepen.io/RocktimSaikia/full/jObbBmR)
-<br/><br/>
-## :cloud: Usage
 
-#### Basic Usage
+## Usage
+
+Using it as a script
 ```html
-<script src="https://unpkg.com/@rocktimsaikia/github-card@2.1.1/dist/widget.min.js" type="module"></script>
+<script src="https://unpkg.com/@rocktimsaikia/github-card@2.1.2/dist/widget.min.js" type="module"></script>
 
 <github-card data-user="rocktimsaikia"></github-card>
 ```
 
-#### Installation
+Through `npm`
 
-```js
+```sh
 npm install @rocktimsaikia/github-card
+// or
+yarn add @rocktimsaikia/github-card
 ```
 
-Then import/require the package.
+
 
 ```js
 import '@rocktimsaikia/github-card'
@@ -40,13 +42,12 @@ import '@rocktimsaikia/github-card'
 <github-card data-user="rocktimsaikia"></github-card>
 ```
 
-#### Theme
-_You can also enable dark theme by setting the data-theme attribute to `dark`_
+## Theme
+You can also enable dark theme by setting the data-theme attribute to `dark`
 
 ```html
 <github-card data-user="rocktimsaikia" data-theme="dark"></github-card>
 ```
-<br/><br/>
 ## License
 
-MIT © [Rocktim Saikia](https://rocktimsaikia.now.sh) 2020
+2021 © MIT [Rocktim Saikia](https://rocktimcodes.site)

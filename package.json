@@ -11,6 +11,7 @@
 		"lint": "eslint .",
 		"prebuild": "del-cli dist",
 		"prepublishOnly": "npm run lint && npm run build",
+		"postversion": "git push && git push --tags",
 		"build": "webpack"
 	},
 	"repository": {
@@ -26,7 +27,7 @@
 	"author": {
 		"name": "Rocktim Saikia",
 		"email": "rocktimthedev@gmail.com",
-		"url": "https://rocktimsaikia.now.sh/"
+		"url": "https://rocktimcodes.site"
 	},
 	"license": "MIT",
 	"bugs": {
@@ -35,7 +36,7 @@
 	"homepage": "https://github.com/RocktimSaikia/github-card#readme",
 	"devDependencies": {
 		"del-cli": "^3.0.1",
-		"eslint": "7.2.0",
+		"eslint": "^7.24.0",
 		"eslint-config-airbnb-base": "14.2.1",
 		"eslint-plugin-import": "2.22.1",
 		"terser-webpack-plugin": "^5.0.3",
