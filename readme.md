@@ -30,7 +30,7 @@ yarn add @rocktimsaikia/github-card
 
 ## Usage
 
-Since this an [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) web component, you can use it both as a script or through installtion.
+Since this an [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) web component, you can use it both as a script or through installation.
 
 ```js
 import '@rocktimsaikia/github-card'
