@@ -17,29 +17,30 @@
 - Minimal and neat design
 - Dark theme available
 
-## Usage
-
-Using it as a script
-```html
-<script src="https://unpkg.com/@rocktimsaikia/github-card@2.1.2/dist/widget.min.js" type="module"></script>
-
-<github-card data-user="rocktimsaikia"></github-card>
-```
-
-Through `npm`
+## Installation
+Available on [npm](https://www.npmjs.com/) as [**@rocktimsaikia/github-card**](https://www.npmjs.com/package/@rocktimsaikia/github-card).
 
 ```sh
 npm install @rocktimsaikia/github-card
-// or
+```
+or with `yarn`
+```sh
 yarn add @rocktimsaikia/github-card
 ```
 
+## Usage
 
+Since this an [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) web component, you can use it both as a script or through installtion.
 
 ```js
 import '@rocktimsaikia/github-card'
 
 <github-card data-user="rocktimsaikia"></github-card>
+```
+
+Or use it as a script in an `html` file :
+```html
+<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@latest?module"></script>
 ```
 
 ## Theme
