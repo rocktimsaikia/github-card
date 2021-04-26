@@ -10,7 +10,7 @@
 	],
 	"scripts": {
 		"lint": "eslint .",
-		"build": "rollup -c",
+		"build": "rollup -c -w",
 		"prebuild": "del-cli dist && npm run lint",
 		"prepublishOnly": "npm run lint && npm run build",
 		"postversion": "git push && git push --tags"
