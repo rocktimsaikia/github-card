@@ -45,7 +45,7 @@ Then use the element anywhere in your HTML:
 Or skip the install and load it straight from a CDN in an HTML file:
 
 ```html
-<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@3.0.2"></script>
+<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@3.0.3"></script>
 ```
 
 ## Attributes

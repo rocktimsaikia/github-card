@@ -19,7 +19,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RocktimSaikia/github-card.git"
+		"url": "git+https://github.com/rocktimsaikia/github-card.git"
 	},
 	"keywords": [
 		"github",
@@ -34,9 +34,9 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/RocktimSaikia/github-card/issues"
+		"url": "https://github.com/rocktimsaikia/github-card/issues"
 	},
-	"homepage": "https://github.com/RocktimSaikia/github-card#readme",
+	"homepage": "https://github.com/rocktimsaikia/github-card#readme",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
 		"esbuild": "0.28.0"
