@@ -11,9 +11,9 @@
 	"scripts": {
 		"lint": "biome check .",
 		"format": "biome check --write .",
-		"build": "rollup -c",
-		"build-watch": "npm run build --watch",
-		"prebuild": "del-cli dist && npm run lint",
+		"build": "esbuild src/index.js --bundle --minify --format=esm --outfile=dist/index.js",
+		"build-watch": "npm run build -- --watch",
+		"prebuild": "npm run lint",
 		"prepublishOnly": "npm run lint && npm run build",
 		"postversion": "git push && git push --tags"
 	},
@@ -39,8 +39,6 @@
 	"homepage": "https://github.com/RocktimSaikia/github-card#readme",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
-		"del-cli": "^3.0.1",
-		"rollup": "^2.45.2",
-		"rollup-plugin-uglify": "^6.0.4"
+		"esbuild": "0.28.0"
 	}
 }

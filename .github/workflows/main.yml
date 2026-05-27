@@ -17,10 +17,8 @@ jobs:
         with:
           node-version: 20.x
 
-      # --legacy-peer-deps tolerates rollup-plugin-uglify's stale rollup<2 peer
-      # range. Drop this once the build plugin is replaced (e.g. @rollup/plugin-terser).
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
 
       - name: Lint
         run: npm run lint
