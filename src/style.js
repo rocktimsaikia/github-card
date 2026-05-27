@@ -16,7 +16,7 @@ const widgetStyle = `
 	position: relative;
 	display: inline-block;
 	width: 320px;
-	padding: 0 28px 28px;
+	padding: 0 28px 20px;
 	background: var(--bg);
 	border-radius: 16px;
 	box-shadow: var(--shadow);
@@ -73,7 +73,7 @@ a {
 	position: relative;
 	width: 104px;
 	height: 104px;
-	margin: 44px auto 14px;
+	margin: 44px auto 8px;
 }
 .card-img-wrapper img {
 	width: 100%;
