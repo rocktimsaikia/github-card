@@ -2,52 +2,106 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>github-card</title>
+		<title>github-card — demo</title>
 		<style>
 			body {
 				font-family:
 					-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 				margin: 0;
-				padding: 40px 16px;
+				padding: 48px 16px;
+				background: #fafbfc;
+				color: #1f2328;
 			}
-			h2 {
-				margin: 36px 0 8px;
+			h1 {
+				margin: 0 0 4px;
+				text-align: center;
+				font-size: 22px;
+			}
+			.subtitle {
+				margin: 0 0 44px;
 				text-align: center;
 				font-size: 14px;
-				font-weight: 600;
 				color: #57606a;
 			}
-			h2 code {
-				background: #eaeef2;
-				padding: 1px 6px;
-				border-radius: 5px;
-			}
-			.profile {
+			.grid {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
-				gap: 28px;
+				gap: 44px 32px;
+			}
+			figure {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 14px;
+				margin: 0;
+				max-width: 320px;
+			}
+			figcaption {
+				text-align: center;
+			}
+			figcaption strong {
+				display: block;
+				margin-bottom: 8px;
+				font-size: 14px;
+			}
+			figcaption code {
+				display: inline-block;
+				margin: 2px;
+				padding: 3px 8px;
+				border-radius: 6px;
+				background: #eaeef2;
+				font-size: 12px;
+				color: #1f2328;
 			}
 		</style>
 	</head>
 	<body>
-		<h2>Default</h2>
-		<div class="profile">
-			<github-card data-user="rocktimsaikia"></github-card>
-			<github-card data-user="benawad" data-theme="dark"></github-card>
-		</div>
+		<h1>github-card</h1>
+		<p class="subtitle">
+			Each example below shows the exact attributes the card is using.
+		</p>
 
-		<h2>Custom accent — set <code>--gh-accent</code> on the element</h2>
-		<div class="profile">
-			<github-card
-				data-user="sindresorhus"
-				style="--gh-accent: #6366f1"
-			></github-card>
-			<github-card
-				data-user="gaearon"
-				data-theme="dark"
-				style="--gh-accent: #22c55e"
-			></github-card>
+		<div class="grid">
+			<figure>
+				<github-card data-user="rocktimsaikia"></github-card>
+				<figcaption>
+					<strong>Default · light theme</strong>
+					<code>data-user="rocktimsaikia"</code>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<github-card data-user="benawad" data-theme="dark"></github-card>
+				<figcaption>
+					<strong>Dark theme</strong>
+					<code>data-theme="dark"</code>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<github-card
+					data-user="sindresorhus"
+					style="--gh-accent: #6366f1"
+				></github-card>
+				<figcaption>
+					<strong>Custom accent</strong>
+					<code>style="--gh-accent: #6366f1"</code>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<github-card
+					data-user="gaearon"
+					data-theme="dark"
+					style="--gh-accent: #22c55e"
+				></github-card>
+				<figcaption>
+					<strong>Dark + custom accent</strong>
+					<code>data-theme="dark"</code>
+					<code>--gh-accent: #22c55e</code>
+				</figcaption>
+			</figure>
 		</div>
 
 		<script type="module" src="../dist/index.js"></script>
