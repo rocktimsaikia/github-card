@@ -1,12 +1,12 @@
 <div>
 	<h1 align="center">github-card 🌈</h1>
 	<p align="center">Beautiful embeddable GitHub profile card for your portfolio. <br/>
-	Here is a live <a href="https://codepen.io/RocktimSaikia/full/jObbBmR">codepen Demo</a></p>
+	Here is a <a href="https://rocktimsaikia.github.io/github-card/">live demo</a></p>
 	<p align="center">
 		<a href="https://github.com/rocktimsaikia/github-card/actions/workflows/main.yml"><img alt="CI" src="https://github.com/rocktimsaikia/github-card/actions/workflows/main.yml/badge.svg"/></a>
 		<a href="https://www.npmjs.com/package/@rocktimsaikia/github-card"><img src="https://badge.fury.io/js/%40rocktimsaikia%2Fgithub-card.svg" alt="npm version"></a>
 	</p>
-	<p align="center"><a href="https://codepen.io/RocktimSaikia/full/jObbBmR"><img src="https://i.ibb.co/LdZZMdr/github-card.png"/></a></p>
+	<p align="center"><a href="https://rocktimsaikia.github.io/github-card/"><img src="https://i.ibb.co/LdZZMdr/github-card.png"/></a></p>
 </div>
 
 
