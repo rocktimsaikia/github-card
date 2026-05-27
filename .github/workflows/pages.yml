@@ -36,14 +36,13 @@ jobs:
       - name: Build bundle
         run: npm run build
 
-      # Assemble the published site: the demo at /examples/ keeps its relative
-      # `../dist/index.js` reference, and the root redirects to it.
+      # Assemble the published site: serve the demo at the site root, rewriting
+      # its relative `../dist/index.js` reference to `./dist/index.js`.
       - name: Assemble site
         run: |
-          mkdir -p _site/examples _site/dist
-          cp examples/index.html _site/examples/index.html
+          mkdir -p _site/dist
           cp dist/index.js _site/dist/index.js
-          printf '<!doctype html><meta http-equiv="refresh" content="0; url=./examples/">\n' > _site/index.html
+          sed 's#\.\./dist/index.js#./dist/index.js#' examples/index.html > _site/index.html
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
