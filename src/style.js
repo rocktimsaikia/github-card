@@ -1,133 +1,176 @@
 const widgetStyle = `
-h1, div, p {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'system-ui'
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-#github-logo{
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-.cover{
-    height: 120px;
-    width: 100%;
-    background: #FF5C5C;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+*, *::before, *::after {
+	box-sizing: border-box;
 }
 
 .card {
-    position: relative;
-    display: inline-block;
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow:  0 12px 13px rgba(0,0,0,0.16), 0 12px 13px rgba(0,0,0,0.16);
-    text-align: center;
-    padding: 20px 50px;
-    margin: 5px;
-    padding-top: 5px;
-    transition: all 0.5s;
+	--accent: var(--gh-accent, #ff5c5c);
+	--bg: #ffffff;
+	--surface: #f6f8fa;
+	--title: #1f2328;
+	--text: #57606a;
+	--muted: #8b949e;
+	--border: rgba(31, 35, 40, 0.1);
+	--shadow: 0 1px 3px rgba(31, 35, 40, 0.08), 0 12px 28px rgba(31, 35, 40, 0.12);
+
+	position: relative;
+	display: inline-block;
+	width: 320px;
+	padding: 0 28px 20px;
+	background: var(--bg);
+	border-radius: 16px;
+	box-shadow: var(--shadow);
+	text-align: center;
+	overflow: hidden;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Dark Theme */
-.card.dark{
-    background: #1C1D21;
-}
-.dark .card-title{
-    color: #E4E4E4 !important;
-    font-weight: 500 !important;
-}
-.dark .card-desc{
-    font-weight: 400 !important;
-    color: #c6c6c6 !important;
-} 
-.dark .count{
-    color: #c6c6c6 !important;
-    font-weight: 600 !important;
-} 
-.dark .box-text{
-    color: #797979 !important;
-    font-weight: 500 !important;
-}
-.dark .footer-box{
-    background: #1D2025 !important;
-    box-shadow: 0px 0.2px 5px rgba(255, 255, 255, 0.15), 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+.card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 2px 6px rgba(31, 35, 40, 0.1), 0 20px 44px rgba(31, 35, 40, 0.18);
 }
 
+/* Dark theme just remaps the palette variables — no !important overrides. */
+.card.dark {
+	--bg: #16181d;
+	--surface: #1f242c;
+	--title: #e6edf3;
+	--text: #adbac7;
+	--muted: #768390;
+	--border: rgba(255, 255, 255, 0.1);
+	--shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 16px 36px rgba(0, 0, 0, 0.55);
+}
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
-.card .fa-github {
-    position: absolute;
-    color: #646464;
-    font-size: 20px;
-    top: 10px;
-    right: 10px;
+.cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 96px;
+	background: var(--accent);
 }
-.card .card-title {
-    color: #434343;
-    margin-bottom: -8px;
-    font-size: 25px;
-    font-weight: 600;
+
+#github-logo {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	height: 22px;
+	opacity: 0.85;
+	transition: opacity 0.2s ease;
 }
-.card .card-responsename {
-    margin-bottom: 20px;
-    color: #797979;
+#github-logo:hover {
+	opacity: 1;
 }
-.card .card-desc {
-    font-weight: 500;
-    width: 250px;
-    margin: auto;
-    display: block;
-    color: #3c3c3c;
+
+.card-img-wrapper {
+	position: relative;
+	width: 104px;
+	height: 104px;
+	margin: 44px auto 8px;
 }
-.card .card-img-wrapper {
-    position: relative;
-    height: 160px;
-    width: 160px;
-    margin: 10px auto;
-    margin-bottom: 20px;
+.card-img-wrapper img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid var(--bg);
+	background: var(--bg);
 }
-.card .card-img-wrapper img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+
+h1 {
+	font-size: 21px;
+	line-height: 1.2;
 }
-.card .card-footer {
-    margin-top: 40px;
+
+.card-title {
+	display: inline-block;
+	color: var(--title);
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: -0.01em;
 }
-.card .card-footer .footer-box {
-    position: relative;
-    border-top: 2px solid #ff9b9b;
-    box-shadow: 0 3px 6px -1px rgb(0 0 0 / 26%), 0 2px 4px -1px rgb(0 0 0 / 6%);
-    border-radius: 5px;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
+
+.card-responsename {
+	margin-top: 2px;
+	color: var(--muted);
+	font-size: 14px;
 }
-.card .card-footer .footer-box .box-wrapper {
-    position: relative;
+
+.card-desc {
+	margin: 12px auto 0;
+	max-width: 250px;
+	color: var(--text);
+	font-size: 13.5px;
+	line-height: 1.5;
 }
-.card .card-footer .footer-box .box-wrapper .count {
-    font-family: 'consolas';
-    color: #434343;
-    font-size: 20px;
-    font-weight: 600;
+
+.card-meta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 4px 14px;
+	margin-top: 12px;
 }
-.card .card-footer .footer-box .box-wrapper .box-text {
-    font-size: 12px;
-    font-weight: 600;
-    color: #00000085;
-    letter-spacing: 0.5px;
+.meta-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	max-width: 100%;
+	color: var(--muted);
+	font-size: 12.5px;
+	line-height: 1.4;
+}
+.meta-item svg {
+	flex-shrink: 0;
+	width: 14px;
+	height: 14px;
+	opacity: 0.8;
+}
+.meta-link {
+	transition: color 0.2s ease;
+}
+.meta-link:hover {
+	color: var(--accent);
+}
+
+.card-footer {
+	margin-top: 20px;
+}
+.footer-box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 13px 6px;
+	border: 1px solid var(--border);
+	border-top: 2px solid var(--accent);
+	border-radius: 12px;
+	background: var(--surface);
+}
+.box-wrapper {
+	flex: 1;
+}
+.count {
+	color: var(--title);
+	font-size: 18px;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+	line-height: 1.2;
+}
+.box-text {
+	margin-top: 3px;
+	color: var(--muted);
+	font-size: 10.5px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
 }
 `;
 
