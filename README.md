@@ -63,4 +63,4 @@ Or skip the install and load it straight from a CDN in an HTML file:
 
 ## License
 
-2021 © MIT [Rocktim Saikia](https://rocktimcodes.site)
+2026 © MIT [Rocktim Saikia](https://rocktimcodes.site)
