@@ -117,7 +117,7 @@ class myCard extends HTMLElement {
 			</div>
 			<div class="box-wrapper">
 				<div class="count">${nFormatter(user.public_repos)}</div>
-				<div class="box-text">Repositories</div>
+				<div class="box-text">Repos</div>
 			</div>
 		</div>
 		</div>
