@@ -61,6 +61,18 @@ Or skip the install and load it straight from a CDN in an HTML file:
 <github-card data-user="rocktimsaikia" data-theme="dark"></github-card>
 ```
 
+## Customization
+
+Override the accent color with the `--gh-accent` CSS custom property on the element:
+
+```css
+github-card {
+	--gh-accent: #6366f1;
+}
+```
+
+The card also surfaces `location`, `company`, and `website` from the GitHub profile when present.
+
 ## License
 
 2026 © MIT [Rocktim Saikia](https://rocktimcodes.site)
