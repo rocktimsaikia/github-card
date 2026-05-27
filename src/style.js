@@ -84,6 +84,11 @@ a {
 	background: var(--bg);
 }
 
+h1 {
+	font-size: 21px;
+	line-height: 1.2;
+}
+
 .card-title {
 	display: inline-block;
 	color: var(--title);
