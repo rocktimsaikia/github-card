@@ -6,7 +6,7 @@
 		<a href="https://github.com/rocktimsaikia/github-card/actions/workflows/main.yml"><img alt="CI" src="https://github.com/rocktimsaikia/github-card/actions/workflows/main.yml/badge.svg"/></a>
 		<a href="https://www.npmjs.com/package/@rocktimsaikia/github-card"><img src="https://badge.fury.io/js/%40rocktimsaikia%2Fgithub-card.svg" alt="npm version"></a>
 	</p>
-	<p align="center"><a href="https://rocktimsaikia.github.io/github-card/"><img src="https://i.ibb.co/LdZZMdr/github-card.png"/></a></p>
+	<p align="center"><a href="https://rocktimsaikia.github.io/github-card/"><img src="media/demo.png" width="640" alt="github-card demo"/></a></p>
 </div>
 
 
@@ -45,7 +45,7 @@ Then use the element anywhere in your HTML:
 Or skip the install and load it straight from a CDN in an HTML file:
 
 ```html
-<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@3.0.3"></script>
+<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card"></script>
 ```
 
 ## Attributes
