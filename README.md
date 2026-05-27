@@ -1,24 +1,22 @@
 <div>
 	<h1 align="center">github-card 🌈</h1>
-	<p align="center">Beautiful embeddable github profile card for your portfolio. <br/> 
-    Here is a live <a href="https://codepen.io/RocktimSaikia/full/jObbBmR">codepen Demo</a></p>
+	<p align="center">Beautiful embeddable GitHub profile card for your portfolio. <br/>
+	Here is a live <a href="https://codepen.io/RocktimSaikia/full/jObbBmR">codepen Demo</a></p>
 	<p align="center">
-		<a href="https://github.com/rocktimsaikia/github-card/actions"><img alt="CI" src="https://github.com/rocktimsaikia/github-card/workflows/CI/badge.svg"/></a>
+		<a href="https://github.com/rocktimsaikia/github-card/actions/workflows/main.yml"><img alt="CI" src="https://github.com/rocktimsaikia/github-card/actions/workflows/main.yml/badge.svg"/></a>
 		<a href="https://www.npmjs.com/package/@rocktimsaikia/github-card"><img src="https://badge.fury.io/js/%40rocktimsaikia%2Fgithub-card.svg" alt="npm version"></a>
 	</p>
-    <p align="center"><a href="https://codepen.io/RocktimSaikia/full/jObbBmR"><img src="https://i.ibb.co/LdZZMdr/github-card.png"/></a></p>
+	<p align="center"><a href="https://codepen.io/RocktimSaikia/full/jObbBmR"><img src="https://i.ibb.co/LdZZMdr/github-card.png"/></a></p>
 </div>
 
 
-## Highlights 
+## Highlights
 
-- Tiny and Zero dependencies (`~4kb`)
-- Simple and easy to use
+- Tiny and zero-dependency (`~4kb`)
 - Minimal and neat design
 - Dark theme available
 
 ## Installation
-Available on [npm](https://www.npmjs.com/) as [**@rocktimsaikia/github-card**](https://www.npmjs.com/package/@rocktimsaikia/github-card).
 
 ```sh
 npm install @rocktimsaikia/github-card
@@ -30,25 +28,39 @@ yarn add @rocktimsaikia/github-card
 
 ## Usage
 
-Since this an [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) web component, you can use it both as a script or through installation.
+Since this is an [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) web component, you can use it either through installation or directly as a script.
+
+Import it in your JavaScript:
 
 ```js
 import '@rocktimsaikia/github-card'
+```
 
+Then use the element anywhere in your HTML:
+
+```html
 <github-card data-user="rocktimsaikia"></github-card>
 ```
 
-Or use it as a script in a `html` file :
+Or skip the install and load it straight from a CDN in an HTML file:
+
 ```html
-<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@latest?module"></script>
+<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@3.0.2"></script>
 ```
 
+## Attributes
+
+| Attribute | Required | Description |
+| --- | --- | --- |
+| `data-user` | yes | GitHub username to render the card for |
+| `data-theme` | no | Set to `dark` for the dark theme; omit for the default light theme |
+
 ## Theme
-You can enable the optional dark theme by setting the `data-theme` attribute to `dark`
 
 ```html
 <github-card data-user="rocktimsaikia" data-theme="dark"></github-card>
 ```
+
 ## License
 
 2021 © MIT [Rocktim Saikia](https://rocktimcodes.site)
