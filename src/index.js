@@ -1,6 +1,7 @@
 /* eslint no-undef: 0 */
 import widgetStyle from './style.js';
 import nFormatter from './format.js';
+import escapeHtml from './escape.js';
 
 const template = document.createElement('template');
 
@@ -19,13 +20,13 @@ class myCard extends HTMLElement {
     this._shadowRoot.append(template.content.cloneNode(true));
   }
 
-  get observedAttribute() {
+  static get observedAttributes() {
     return ['data-theme'];
   }
 
   attributeChangedCallback(attr, oldValue, newValue) {
-    if (attr === 'data-theme' && oldValue !== newValue && newValue !== '') {
-      this[attr] = newValue;
+    if (attr === 'data-theme' && oldValue !== newValue) {
+      this.setTheme(newValue);
     }
   }
 
@@ -34,11 +35,6 @@ class myCard extends HTMLElement {
       const cardTemplate = this.createCard(response);
       this._shadowRoot.querySelector('.card').innerHTML = cardTemplate;
     });
-
-    if (this.getAttribute('data-theme')) {
-      const theme = this.getAttribute('data-theme');
-      this.setTheme(theme);
-    }
   }
 
   setTheme(theme) {
@@ -62,29 +58,35 @@ class myCard extends HTMLElement {
   }
 
   createCard(user) {
+    const login = escapeHtml(user.login);
+    const htmlUrl = escapeHtml(user.html_url);
+    const name = escapeHtml(user.name);
+    const bio = escapeHtml(user.bio ?? '');
     return `
         <div class="cover"></div>
         <div class="card-wrapper">
-        <a href="https://github.com/${user.login}" target="_blank" rel="noopener"><img id="github-logo" src="https://i.ibb.co/frv5pB3/github-logo.png" alt="github-logo" border="0"></a>
+        <a href="https://github.com/${login}" target="_blank" rel="noopener"><img id="github-logo" src="https://i.ibb.co/frv5pB3/github-logo.png" alt="github-logo" border="0"></a>
         <div class="card-header">
-        <div class="card-img-wrapper"><img src="https://avatars.githubusercontent.com/${user.login}"/></div>
-        <h1><a class="card-title" href="${user.html_url}" target="_blank" rel="noopener">${user.name}</a></h1>
-        <div class="card-responsename"><a href="${user.html_url}" target="_blank" rel="noopener">@${user.login}</a></div>
-        <p class="card-desc">${user.bio ?? ''}</p>
+        <div class="card-img-wrapper"><img src="https://avatars.githubusercontent.com/${login}" alt="${name}"/></div>
+        <h1><a class="card-title" href="${htmlUrl}" target="_blank" rel="noopener">${name}</a></h1>
+        <div class="card-responsename"><a href="${htmlUrl}" target="_blank" rel="noopener">@${login}</a></div>
+        <p class="card-desc">${bio}</p>
         <div class="card-footer">
         <div class="footer-box">
             <div class="box-wrapper">
                 <div class="count">${nFormatter(user.followers)}</div>
                 <div class="box-text">Followers</div>
-            </div>   
+            </div>
             <div class="box-wrapper">
                 <div class="count">${nFormatter(user.following)}</div>
                 <div class="box-text">Following</div>
-            </div>  
+            </div>
             <div class="box-wrapper">
                 <div class="count">${nFormatter(user.public_repos)}</div>
                 <div class="box-text">Repositories</div>
             </div>
+        </div>
+        </div>
         </div>
         </div>
         `;
